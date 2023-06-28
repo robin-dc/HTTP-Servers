@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different Form Methods</title>
+</head>
+
+<body>
+
+  <!-- clicking on this <a> tag will make a GET / request -->
+  <a href="https://appacademy.io/">Link to Resource</a>
+
+  <!-- submitting this <form> will make a GET / request -->
+  <form action="/home" method="GET">
+    <button type="submit">Access the home page</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/contact" method="POST">
+    <button type="submit">Submit a contact form</button>
+  </form>
+
+  <!-- submitting this <form> will make a GET / request -->
+  <form action="/posts" method="GET">
+    <button type="submit">Access the posts page</button>
+  </form>
+                     |
+  <!-- submitting this <form> will make a GET / request -->
+  <form action="/posts/:post-id/edit" method="GET">
+    <button type="submit">Access the edit page for a post</button>
+  </form>
+
+  <!-- submitting this <form> will make a GET / request -->
+  <form action="/posts/:post-id/create" method="GET">
+    <button type="submit">Access the create page for a post</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/user/create" method="POST">
+    <button type="submit">Create a new user</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/login" method="POST">
+    <button type="submit">Log In</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/logout" method="POST">
+    <button type="submit">Log Out</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/posts/:post-id/comments" method="GET">
+    <button type="submit">Access the comments for a post page</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/posts/:post-id/comments/create" method="GET">
+    <button type="submit">Access the create page for a post's comment</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/posts/:post-id/comments/:comment-id/edit" method="GET">
+    <button type="submit">Access the edit page for a comment</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/posts/:post-id/like" method="POST">
+    <button type="submit">Submit a like for a post</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/posts/:post-id/like/delete" method="POST">
+    <button type="submit">Delete a like for a post</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/user/posts" method="GET">
+    <button type="submit">Access all the posts of a user</button>
+  </form>
+
+  <!-- submitting this <form> will make a POST / request -->
+  <form action="/posts/search/:post-id" method="GET">
+    <button type="submit">Submit a search on posts</button>
+  </form>
+
+</body>
+
+</html>
